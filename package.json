@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "osu-api-shtuff",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "��#\u0000 \u0000o\u0000s\u0000u\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000#\u0000 \u0000o\u0000s\u0000u\u0000-\u0000h\u0000i\u0000g\u0000h\u0000e\u0000r\u0000-\u0000l\u0000o\u0000w\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "devDependencies": {}
+}
