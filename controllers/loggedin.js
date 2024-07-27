@@ -7,7 +7,7 @@ module.exports = {
         const access_token = req.cookies.access_token
         const id = await getRandomId()
         const data = await model.getTopBeatmapset(access_token, id)
-        res.render('osu.ejs', {cover: data['covers']['cover@2x'], playcount: data['play_count'].toLocaleString(), title: data['title']})
+        res.render('osu.ejs', {cover: data['covers']['cover@2x'], playcount: data['play_count'].toLocaleString(), title: data['title'], mapper: data['creator']})
     }
 }
 

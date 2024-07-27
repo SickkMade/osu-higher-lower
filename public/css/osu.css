@@ -1,0 +1,40 @@
+@font-face{
+    font-family: 'aller';
+    src:url(../fonts/Aller_Bd.ttf);
+}
+
+body{
+    font-family:'aller', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .75);
+}
+
+.noclick{
+    pointer-events: none;
+}
+
+.fuzz{
+    position:relative;
+    /* opacity:60%; add bg darkener too*/ 
+    filter:blur(4px) grayscale(25%) saturate(75%);
+}
+
+.bg-image{
+    position:absolute;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    background-size:contain;
+}
+
+.dark-bg{
+    background-color:rgb(34 40 42);
+}
+
+#top{
+    position:relative;
+    height:50%;
+    width:100%;
+}

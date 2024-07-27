@@ -1,10 +1,17 @@
 <html>
     <head>
         <title>oh sue!</title>
+        <link rel="stylesheet" href="css/osu.css">
+        <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
-        <p><%= title %></p>
-        <p><%= playcount %></p>
-        <img src="<%= cover %>">
+        <section id="top">
+            <p><%= title %></p>
+            <p><%= playcount %></p>
+            <p><%= mapper %></p>
+            <img class="noclick fuzz bg-image" src="<%= cover %>">
+        </section>
+        
+        
     </body>
 </html>
