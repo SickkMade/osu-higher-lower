@@ -5,13 +5,22 @@
         <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
-        <section id="top">
-            <p><%= title %></p>
-            <p><%= playcount %></p>
-            <p><%= mapper %></p>
-            <img class="noclick fuzz bg-image" src="<%= cover %>">
+        <section id="top" class="big-border">
+            <p><%= beatmapsetOne['title'] %></p>
+            <p><%= beatmapsetOne['play_count'].toLocaleString() %></p>
+            <p><%= beatmapsetOne['creator'] %></p>
+            <img class="noclick fuzz bg-image" src="<%= beatmapsetOne['covers']['cover@2x'] %>">
         </section>
-        
-        
+        <section id="bottom" class="big-border">
+            <p><%= beatmapsetTwo['title'] %></p>
+            <p><%= beatmapsetTwo['play_count'].toLocaleString() %></p>
+            <p><%= beatmapsetTwo['creator'] %></p>
+            <img class="noclick fuzz bg-image" src="<%= beatmapsetTwo['covers']['cover@2x'] %>">
+        </section>
+        <div class="vs">
+            <span>VS</span>
+        </div>
     </body>
 </html>
+
+<!-- add different cover, the square one for mobile size :) -->
