@@ -4,10 +4,15 @@ const path = require('path')
 
 module.exports = {
     getIndex: async (req, res) => {
-        const access_token = req.cookies.access_token
-        const beatmapsetOne = await model.getTopBeatmapset(access_token, await getRandomId())
-        const beatmapsetTwo = await model.getTopBeatmapset(access_token, await getRandomId())
-        res.render('osu.ejs', {beatmapsetOne: beatmapsetOne, beatmapsetTwo: beatmapsetTwo})
+        try{
+            const access_token = req.cookies.access_token
+            const beatmapsetOne = await model.getTopBeatmapset(access_token, await getRandomId())
+            const beatmapsetTwo = await model.getTopBeatmapset(access_token, await getRandomId())
+            res.render('osu.ejs', {beatmapsetOne: beatmapsetOne, beatmapsetTwo: beatmapsetTwo})
+        } catch (e){
+            console.error(e)
+        }
+        
     }
 }
 //{cover: data['covers']['cover@2x'], playcount: data['play_count'].toLocaleString(), title: data['title'], mapper: data['creator']}
